@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Secure Dynamic Task Manager</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+    <main class="app-container">
+
+        <section class="task-card">
+
+            <header class="app-header">
+                <p class="eyebrow">ITP10 • Event-Driven Programming</p>
+
+                <h1>Secure Dynamic Task Manager</h1>
+
+                <p class="subtitle">
+                    Create, edit, complete, and remove tasks dynamically.
+                </p>
+            </header>
+
+
+            <section class="task-controls">
+
+                <div class="input-row">
+
+                    <label for="taskInput" class="sr-only">
+                        Task
+                    </label>
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="Enter a task"
+                        autocomplete="off"
+                    >
+
+                    <button id="addTaskBtn" type="button">
+                        Add Task
+                    </button>
+
+                </div>
+
+
+                <button
+                    id="loadSamplesBtn"
+                    class="secondary-btn"
+                    type="button"
+                >
+                    Load Sample Tasks
+                </button>
+
+
+                <p
+                    id="taskMessage"
+                    class="task-message"
+                    role="alert"
+                    aria-live="polite"
+                ></p>
+
+            </section>
+
+
+            <section class="summary">
+
+                <div class="summary-box">
+                    <span class="summary-label">
+                        Total Tasks
+                    </span>
+
+                    <strong id="totalCount">0</strong>
+                </div>
+
+
+                <div class="summary-box">
+                    <span class="summary-label">
+                        Pending
+                    </span>
+
+                    <strong id="pendingCount">0</strong>
+                </div>
+
+
+                <div class="summary-box">
+                    <span class="summary-label">
+                        Completed
+                    </span>
+
+                    <strong id="completedCount">0</strong>
+                </div>
+
+            </section>
+
+
+            <section class="task-section">
+
+                <h2>Your Tasks</h2>
+
+                <ul id="taskList"></ul>
+
+                <p class="empty-note">
+                    Tasks will appear here. Start by adding a task
+                    or loading the samples.
+                </p>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
